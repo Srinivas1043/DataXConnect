@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('neo4j_utils/', include('neo4j_utils.urls')),
-    path('admin/', admin.site.urls)
+    path('admin/', admin.site.urls),
+    path('authentication/',include("authentication.urls"))
 ]
